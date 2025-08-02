@@ -80,7 +80,6 @@ void walker_process()
     MPI_Send(&steps, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 }
 
-
 void controller_process()
 {
 
@@ -97,5 +96,5 @@ void controller_process()
                   << " finished in " << steps << " steps." << std::endl;
     }
 
-    std::cout << "Controller: All " << num_walkers << " walkers have finished." << std::endl;
+    std::cout << "Controller: All " << num_walkers << " walkers have finished." << std::endl;
 }
